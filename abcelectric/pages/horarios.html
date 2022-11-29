@@ -9,30 +9,34 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header class="encabezado">
-        <h1 class="titulo">Horarios</h1>
-        <nav>
-            <div class="barra">
-                <ul class="barra__lista">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./catalogo.html">Catálogo</a></li>
-                    <li><a href="./horarios.html">Horarios</a></li>
-                    <li><a href="./sobrenosotros.html">Sobre nosotros</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>  
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom encabezado">
+        <a href="../index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none"><img src="../assests/imagenes/logo.png" class="logo" alt="logo"></a>
+        <ul class="nav nav-pills d-flex align-items-center">
+            <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="./catalogo.html" class="nav-link">Catálogo</a></li>
+            <li class="nav-item"><a href="./horarios.html" class="nav-link">Horarios</a></li>
+            <li class="nav-item"><a href="./sobrenosotros.html" class="nav-link">Sobre nosotros</a></li>
+            <li class="nav-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
     </header>
-    <main class="horario"> 
-        <div class="wsp__link"><a href="#"><img src="../assests/imagenes/wsp.png" height="50px" width="50px"></a></div>
-        <div class="horario__texto">
-            <h1>Horarios de atención</h1>
-            <p>Lunes a viernes: 10hs a 19hs</p>
-            <p>Sabados: 8hs a 12hs</p>
-        </div>
-        <div class="horario__mapa">
-            <a href="https://www.google.com/maps/place/ABC+Electric/@-31.4309993,-64.153921,17z/data=!3m1!4b1!4m5!3m4!1s0x9432a2cb9727fcc3:0x3fc6254d58cfb2c3!8m2!3d-31.4310076!4d-64.1516934" target="_blank" class="horario__link">Sargento Cabral 1930
-            <img class="horario__mapa-img" src="../assests/imagenes/mapa.jpg"></a>
+    <main>
+        <div class="container d-flex justify-content-center">
+            <div>
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <h1 class="titulos">Horarios de atención</h1>
+                    <p class="texto">Lunes a viernes 10hs a 19hs</p>
+                    <p class="texto">Sabados: 8hs a 12hs</p>
+                </div>
+                <div>
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <p class="subtitulo">Nos ubicamos en</p>
+                        <h2 class="subtitulo"><a href="https://www.google.com/maps/place/ABC+Electric/@-31.4309993,-64.153921,17z/data=!3m1!4b1!4m5!3m4!1s0x9432a2cb9727fcc3:0x3fc6254d58cfb2c3!8m2!3d-31.4310076!4d-64.1516934" target="_blank" class="direccion">Sargento Cabral 1930</a></h2>
+                    </div>
+                    <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.383320881034!2d-64.1519642815694!3d-31.431112516811204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2cb9727fcc3%3A0x3fc6254d58cfb2c3!2sABC%20Electric!5e0!3m2!1ses-419!2sar!4v1669663415571!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="img-inicio"></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer class="pie">

@@ -9,54 +9,57 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header class="encabezado">
-        <h1 class="titulo">Catálogo</h1>
-        <nav>
-            <div class="barra">
-                <ul class="barra__lista">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./catalogo.html">Catálogo</a></li>
-                    <li><a href="./horarios.html">Horarios</a></li>
-                    <li><a href="./sobrenosotros.html">Sobre nosotros</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>  
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom encabezado">
+        <a href="../index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none"><img src="../assests/imagenes/logo.png" class="logo" alt="logo"></a>
+        <ul class="nav nav-pills d-flex align-items-center">
+            <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="./catalogo.html" class="nav-link">Catálogo</a></li>
+            <li class="nav-item"><a href="./horarios.html" class="nav-link">Horarios</a></li>
+            <li class="nav-item"><a href="./sobrenosotros.html" class="nav-link">Sobre nosotros</a></li>
+            <li class="nav-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
     </header>
     <main>
         <div class="wsp__link"><a href="#"><img src="../assests/imagenes/wsp.png" height="50px" width="50px"></a></div>
-        <div class="contenedorProductos">
-            <div class="producto">
-                <p class="producto__texto">Cámara de seguridad</p>
-                <p class="producto__descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, nemo.</p>
-                <img src="../assests/imagenes/camara.jpg" class="producto__imagen">
+        <h1 class="titulo">Catálogo</h1>
+        <div class="galeria mt-2">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../assests/imagenes/sensor.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../assests/imagenes/solar10w.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../assests/imagenes/velador.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <div class="producto">
-                <p class="producto__texto">Cable de red</p>
-                <p class="producto__descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, nemo.</p>
-                <img src="../assests/imagenes/cable.jpg" class="producto__imagen">
+          </div>
+        <section class="container ">
+            <div class="row justify-content-around offcanvas-header ">
+              <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail"><img class="cover zoom" src="../assests/imagenes/lampara-sensor.jpg" alt="" width="100%" height="100%"></div>
+              <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail"><img class="cover zoom" src="../assests/imagenes/camara.jpg" alt="" width="100%" height="100%"></div>
+              <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail"><img class="cover zoom" src="../assests/imagenes/fuente.jpg" alt="" width="100%" height="100%"></div>
+              <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail"><img class="cover zoom" src="../assests/imagenes/lampara.jpg" alt="" width="100%" height="100%"></div>
+              <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail"><img class="cover zoom" src="../assests/imagenes/lucesled.jpg" alt="" width="100%" height="100%"></div>
+              <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail"><img class="cover zoom" src="../assests/imagenes/sensor.jpg" alt="" width="100%" height="100%"></div>
+              <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail"><img class="cover zoom" src="../assests/imagenes/bateria.jpg" alt="" width="100%" height="100%"></div>
+              <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail"><img class="cover zoom" src="../assests/imagenes/guirnalda.jpg" alt="" width="100%" height="100%"></div>
+              <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail "><img class="cover zoom" src="../assests/imagenes/kit-alerta.jpg" alt="" width="100%" height="100%"></div>
+              <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail "><img class="cover zoom" src="../assests/imagenes/lampara-sensor.jpg" alt="" width="100%" height="100%"></div>
+              <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail "><img class="cover zoom" src="../assests/imagenes/medidor.jpg" alt="" width="100%" height="100%"></div>
+              <div class="col-lg-3 col-md-6 col-sm-12 img-thumbnail "><img class="cover zoom" src="../assests/imagenes/velador.jpg" alt="" width="100%" height="100%"></div>
             </div>
-            <div class="producto">
-                <p class="producto__texto">Celular</p>
-                <p class="producto__descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, nemo.</p>
-                <img src="../assests/imagenes/celular.jpg" class="producto__imagen">
-            </div>
-            <div class="producto">
-                <p class="producto__texto">Lampara led</p>
-                <p class="producto__descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, nemo.</p>
-                <img src="../assests/imagenes/lampara.jpg" class="producto__imagen">
-            </div>
-            <div class="producto">
-                <p class="producto__texto">Sensor de movimiento</p>
-                <p class="producto__descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, nemo.</p>
-                <img src="../assests/imagenes/sensor.jpg" class="producto__imagen">
-            </div>
-            <div class="producto">
-                <p class="producto__texto">Luces led</p>
-                <p class="producto__descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, nemo.</p>
-                <img src="../assests/imagenes/lucesled.jpg" class="producto__imagen">
-            </div>
-        </div>
     </main>
     <footer class="pie">
         <h2>Seguinos en nuestras redes</h2>

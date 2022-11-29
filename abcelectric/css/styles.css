@@ -46,20 +46,17 @@ body{
     background-color: #C5CAE9;
 }
 
-main{
-    color: #212121;
-    width: 90vh;
-}
-
 .botonesInicio{
-    position: relative;
-    top: 30px;
-    left: 150px;
     background-color: #FF5252;
     color: #FFFFFF;
     font-weight: bold;
     padding: 15px;
     text-decoration: none;
+}
+
+.botonesInicio:hover{
+    color: #FFFFFF;
+
 }
 
 .direccion{
@@ -74,9 +71,11 @@ main{
 }
 
 .subtitulo{
-    font-size: 30px;    
+    font-size: 30px;
+    font-weight: bold;
 }
 .titulo{
+    font-weight: bold;
     padding: 10px;
     font-size: 50px;
 }
@@ -109,15 +108,6 @@ main{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
-
-.horario{
-    display: grid;
-    grid-template-columns: 88% auto;
-    grid-template-rows: 1fr;
-    text-align:center;
-    height: 61.5vh;
-}
-
 .horario__mapa-img{
     position: relative;
     top: 10px;
@@ -156,8 +146,97 @@ main{
     padding: 19px;
 }
 
+.carousel-item{
+    height: 60vh;
+ }
+ .carousel-item img{
+     height: 100%;
+ }
+
+.zoom {
+    transition: transform .2s; 
+}
+ 
+.zoom:hover {
+    transform: scale(1.5); 
+}
+
 .wsp__link{
     position: fixed;
     bottom: 0;
     right: 5px;
+}
+
+.featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+.img-inicio{
+    width: 31.25rem;
+    height: 18.75rem;
+    object-fit: cover;
+}
+
+.nav-item:hover{
+    background-color: #ffffff;
+    border-radius: 0.25rem;
+}
+
+.logo{
+    object-fit: cover;
+    width:18.75rem;
+    height: 3rem;
+}
+
+@media screen and(min-width:0px) and (max-width:576px){
+    .inicio{
+        display: flex;
+        text-align:center
+    }
+    .row div{
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:768px){
+    .inicio{
+        display: flex;
+        text-align:center;
+        width: 100%;
+        height: 100%;
+    }
+    .row div{
+        padding-bottom: 0.5rem;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+    .inicio{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header{
+        width: 100%;
+    }
+    .img-inicio{
+        height: 14.375rem;
+        width: 22rem;
+    
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:823px) {
+    .logo{
+        position: relative;
+        left: 16rem;
+    }
 }
