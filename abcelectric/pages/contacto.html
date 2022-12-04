@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABC electric</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="./css/hover.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -21,14 +22,30 @@
     </header>
     <main> 
         <div class="wsp__link"><a href="#"><img src="../assests/imagenes/wsp.png" height="50px" width="50px"></a></div>
-        <div class="formulario">
-            <div>
-                <div><img src="../assests/imagenes/local1.jpg" width="500px" height="300px"></div>
-                <form>
-                    <input type="text" placeholder="Nombre" required>
-                    <input type="email" placeholder="Correo" required>
-                    <input type="text" placeholder="Mensaje" required>
-                </form>
+        <h1 class="titulo">Contacto</h1>
+        <div class="container contacto">
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center justify-content-center order-md-2">
+                    <form class="formulario">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">A este correo será enviada la respuesta.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                        <div class="mb-3 form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">Deseo recibir novedades</label>
+                        </div>
+                        <button type="submit" class="botonesInicio hvr-grow-shadow">Enviar</button>
+                      </form>
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.383320881034!2d-64.1519642815694!3d-31.431112516811204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2cb9727fcc3%3A0x3fc6254d58cfb2c3!2sABC%20Electric!5e0!3m2!1ses-419!2sar!4v1669663415571!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="img-inicio"></iframe>
+                </div>
             </div>
         </div>
     </main>

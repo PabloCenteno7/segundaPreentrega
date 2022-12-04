@@ -141,9 +141,7 @@ body{
 }
 
 .formulario{
-    position: relative;
-    left: 400px;
-    padding: 19px;
+    width: 100vh;
 }
 
 .carousel-item{
@@ -192,6 +190,10 @@ body{
     object-fit: cover;
     width:18.75rem;
     height: 3rem;
+}
+
+.contacto{
+    height: 70vh;
 }
 
 @media screen and(min-width:0px) and (max-width:576px){
