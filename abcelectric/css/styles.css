@@ -196,6 +196,22 @@ body{
     height: 70vh;
 }
 
+.titulo-span{
+    color:red;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.p-4{
+    padding: 4%;
+    opacity: 0%;
+}
+
+.img-sobrenosotros{
+    width: 30rem;
+    height: 18rem;
+    object-fit: cover;
+}
 @media screen and(min-width:0px) and (max-width:576px){
     .inicio{
         display: flex;
