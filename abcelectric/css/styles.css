@@ -208,10 +208,19 @@ body{
 }
 
 .img-sobrenosotros{
-    width: 30rem;
+    width: 29.5rem;
     height: 18rem;
     object-fit: cover;
 }
+
+.lista{
+    list-style-image: url(../assests/imagenes/rayo.svg);
+}
+
+.lista li{
+    padding: 1%;
+}
+
 @media screen and(min-width:0px) and (max-width:576px){
     .inicio{
         display: flex;
