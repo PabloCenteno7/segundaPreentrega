@@ -1,0 +1,269 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.barra__lista a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.contenedor__texto{
+    position: relative;
+    left: 600px;
+    bottom: 160px;
+}
+
+.pie{
+    text-align: center;
+    background-color: #303F9F;
+    color:#FFFFFF;
+    font-weight: bold;
+    
+}
+
+.pie a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.encabezado{
+    background-color: #303F9F;
+    color: white;
+    font-weight: bold;
+}
+
+.barra__lista{
+    text-align: center;
+    list-style: none;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+body{
+    background-color: #C5CAE9;
+}
+
+.botonesInicio{
+    background-color: #FF5252;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.botonesInicio:hover{
+    color: #FFFFFF;
+
+}
+
+.direccion{
+    text-decoration: none;
+    color: #3F51B5;
+    font-weight: bold;
+    font-size:35px;
+}
+
+.texto{
+    font-size: 20px;
+}
+
+.subtitulo{
+    font-size: 30px;
+    font-weight: bold;
+}
+.titulo{
+    font-weight: bold;
+    padding: 10px;
+    font-size: 50px;
+}
+
+.producto__imagen{
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.producto__texto{
+    font-size: 25px;
+    color: #212121;
+}
+
+.producto{
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 5%;
+    margin: 10px;
+}
+
+.producto__descripcion{
+    font-size: 15px;
+    color: #757575;
+}
+
+.contenedorProductos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.horario__mapa-img{
+    position: relative;
+    top: 10px;
+    width: 400px;
+    height: 250px;
+}
+
+.horario__texto{
+    position: relative;
+    top: 100px;
+}
+
+.horario__link{
+    text-decoration: none;
+    color:#212121;
+    position: relative;
+    top: 40px;
+    font-weight:600;
+    font-size: 30px;
+    margin: 0%;
+}
+
+.empresa{
+    display: grid;
+    grid-template-columns: 20% auto;
+}
+
+.empresa__texto{
+    position: relative;
+    left: 450px;
+}
+
+.formulario{
+    width: 100vh;
+}
+
+.carousel-item{
+    height: 60vh;
+ }
+ .carousel-item img{
+     height: 100%;
+ }
+
+.zoom {
+    transition: transform .2s; 
+}
+ 
+.zoom:hover {
+    transform: scale(1.5); 
+}
+
+.wsp__link{
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+}
+
+.featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+.img-inicio{
+    width: 31.25rem;
+    height: 18.75rem;
+    object-fit: cover;
+}
+
+.nav-item:hover{
+    background-color: #ffffff;
+    border-radius: 0.25rem;
+}
+
+.logo{
+    object-fit: cover;
+    width:18.75rem;
+    height: 3rem;
+}
+
+.contacto{
+    height: 70vh;
+}
+
+.titulo-span{
+    color:red;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.p-4{
+    padding: 4%;
+    opacity: 0%;
+}
+
+.img-sobrenosotros{
+    width: 29.5rem;
+    height: 18rem;
+    object-fit: cover;
+}
+
+.lista{
+    list-style-image: url(../assests/imagenes/rayo.svg);
+}
+
+.lista li{
+    padding: 1%;
+}
+
+@media screen and(min-width:0px) and (max-width:576px){
+    .inicio{
+        display: flex;
+        text-align:center
+    }
+    .row div{
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:768px){
+    .inicio{
+        display: flex;
+        text-align:center;
+        width: 100%;
+        height: 100%;
+    }
+    .row div{
+        padding-bottom: 0.5rem;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+    .inicio{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header{
+        width: 100%;
+    }
+    .img-inicio{
+        height: 14.375rem;
+        width: 22rem;
+    
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:823px) {
+    .logo{
+        position: relative;
+        left: 16rem;
+    }
+}

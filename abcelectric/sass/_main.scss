@@ -1,0 +1,169 @@
+body{
+    background-color: map-get($colores-pagina, body);
+}
+
+.botonesInicio{
+    background-color:map-get($colores-pagina, rojo-claro);
+    color:map-get($colores-pagina, blanco);
+    font-weight: bold;
+    padding: 15px;
+    text-decoration: none;
+    &:hover{
+        color:$color-blanco;
+    }
+}
+
+.carousel-item{
+    height: 60vh;
+    img{
+        height: 100%;
+    }
+ }
+
+.zoom {
+    transition: transform .2s;
+    &:hover{
+        transform: scale(1.5);
+    }
+}
+
+.direccion{
+    text-decoration: none;
+    color: map-get($colores-pagina, azul);
+    font-weight: bold;
+    font-size:35px;
+}
+
+.texto{
+    font-size: 1.25rem;
+}
+
+.subtitulo{
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+.titulo{
+    font-weight: bold;
+    padding: 0.625rem;
+    font-size: 3.125rem;
+}
+
+.formulario{
+    width: 100vh;
+}
+
+.wsp__link{
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+}
+
+.featurette-divider {
+    margin: 5rem 0;
+  }
+  
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+.img-inicio{
+    width: 31.25rem;
+    height: 18.75rem;
+    object-fit: cover;
+}
+.contacto{
+    height: 70vh;
+}
+
+.titulo-span{
+    color:map-get($colores-pagina, rojo);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.p-4{
+    padding: 4%;
+    opacity: 0%;
+}
+
+.img-sobrenosotros{
+    width: 29.5rem;
+    height: 18rem;
+    object-fit: cover;
+}
+
+.lista{
+    list-style-image: url(../assests/imagenes/rayo.svg);
+    li{
+        padding: 1%;
+    }
+}
+
+@media screen and(min-width:0px) and (max-width:576px){
+    .inicio{
+        display: flex;
+        text-align:center
+    }
+    .row div{
+        padding: 0.5rem;
+    }
+
+    .img-sobrenosotros{
+        width: 50%;
+    }
+
+    .contacto{
+        height: 1000px;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:767px){
+    .inicio{
+        display: flex;
+        text-align:center;
+        width: 100%;
+        height: 100%;
+    }
+    .row div{
+        padding-bottom: 0.5rem;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+    .vh{
+        min-height: 1000px;
+    }
+
+    footer{
+        margin-top: auto;
+    }
+
+    .inicio{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    .img-sobrenosotros{
+        width: 30%;
+    }
+
+    .img-inicio{
+        height: 14.375rem;
+        width: 22rem;
+    }
+}
+
+// @media screen and (min-width:768px) and (max-width:823px) {
+//     .logo{
+//         position: relative;
+//         left: 16rem;}
+// }

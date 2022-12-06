@@ -1,0 +1,16 @@
+.encabezado{
+    background-color: $color-primario;
+    color:$color-blanco;
+    font-weight: bold;
+}
+
+.nav-item:hover{
+    background-color:map-get($colores-pagina, blanco);
+    border-radius: 0.25rem;
+}
+
+.logo{
+    object-fit: cover;
+    width:18.75rem;
+    height: 3rem;
+}

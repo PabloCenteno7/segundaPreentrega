@@ -1,0 +1,10 @@
+.pie{
+    text-align: center;
+    background-color: map-get($colores-pagina, primario);
+    color:map-get($colores-pagina, blanco);
+    font-weight: bold;
+    a{
+        text-decoration: none;
+        color:map-get($colores-pagina, blanco);
+    }
+}
