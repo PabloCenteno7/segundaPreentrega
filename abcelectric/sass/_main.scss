@@ -9,9 +9,10 @@ body{
     padding: 15px;
     text-decoration: none;
     &:hover{
-        color:$color-blanco;
+        color:map-get($colores-pagina, blanco)
     }
 }
+
 
 .carousel-item{
     height: 60vh;
@@ -44,18 +45,18 @@ body{
 }
 .titulo{
     font-weight: bold;
-    padding: 0.625rem;
+    padding: 0.5rem;
     font-size: 3.125rem;
 }
 
 .formulario{
-    width: 100vh;
+    width: 100%;
 }
 
 .wsp__link{
     position: fixed;
-    bottom: 0;
-    right: 5px;
+    bottom: 1%;
+    right: 1%;
 }
 
 .featurette-divider {
@@ -74,7 +75,7 @@ body{
     object-fit: cover;
 }
 .contacto{
-    height: 70vh;
+    height: 80vh;
 }
 
 .titulo-span{
@@ -94,11 +95,21 @@ body{
     object-fit: cover;
 }
 
+.img-error{
+    width: 5rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
 .lista{
     list-style-image: url(../assests/imagenes/rayo.svg);
     li{
         padding: 1%;
     }
+}
+
+.img-cover{
+    object-fit: cover;
 }
 
 @media screen and(min-width:0px) and (max-width:576px){
@@ -111,11 +122,12 @@ body{
     }
 
     .img-sobrenosotros{
-        width: 50%;
+        @include mixinWidht;
+        overflow: hidden;
     }
 
     .contacto{
-        height: 1000px;
+        height: 180vh;
     }
 }
 
@@ -123,25 +135,24 @@ body{
     .inicio{
         display: flex;
         text-align:center;
-        width: 100%;
         height: 100%;
+        @include mixinWidht;
     }
     .row div{
         padding-bottom: 0.5rem;
     }
+    .contacto{
+        height: 180vh;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:992px){
-    .vh{
-        min-height: 1000px;
-    }
-
     footer{
         margin-top: auto;
     }
 
     .inicio{
-        width: 100%;
+        @include min-width;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -149,21 +160,27 @@ body{
     }
 
     header{
-        width: 100%;
+        @include min-width;
     }
 
     .img-sobrenosotros{
-        width: 30%;
+        @include min-width;
     }
 
     .img-inicio{
         height: 14.375rem;
         width: 22rem;
     }
-}
 
-// @media screen and (min-width:768px) and (max-width:823px) {
-//     .logo{
-//         position: relative;
-//         left: 16rem;}
-// }
+    .contacto{
+        @include mixinHeight;
+    }
+}
+@media screen and (min-width:993px){
+    .contacto{
+        @include mixinHeight;
+    }
+    .row .ancho{
+        @include min-width;
+    }
+}

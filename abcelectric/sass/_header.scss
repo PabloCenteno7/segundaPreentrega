@@ -1,6 +1,6 @@
 .encabezado{
-    background-color: $color-primario;
-    color:$color-blanco;
+    background-color: map-get($colores-pagina, primario);
+    color:map-get($colores-pagina, blanco);
     font-weight: bold;
 }
 

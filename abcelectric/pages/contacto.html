@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABC electric</title>
+    <meta name="description" content="Podes contactarte con nosotros para resolver tus dudas con aseseoramiento profesional.">
+    <meta name="keywords" content="abcelectric, abc electric,contacto">
+    <title>ABC electric Contacto</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/hover.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="icon" type="image/x-icon" href="../assests/imagenes/abc.ico">
 </head>
 <body>
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom encabezado">
@@ -21,20 +25,20 @@
         </ul>
     </header>
     <main class="contacto"> 
-        <div class="wsp__link"><a href="#"><img src="../assests/imagenes/wsp.png" height="50px" width="50px" alt="logo whatsapp"></a></div>
+        <div class="wsp__link hvr-grow-rotate"><a href="https://api.whatsapp.com/send?phone=543516111199" target="_blank"><img src="../assests/imagenes/wsp.png" height="50px" width="50px" alt="logo whatsapp"></a></div>
         <h1 class="titulo">Contacto</h1>
         <div class="container contacto">
-            <div class="row">
-                <div class="col-md-6 d-flex align-items-center justify-content-center order-md-2">
-                    <form class="formulario">
+            <div class="row ancho">
+                <div class="col-md-6 d-flex align-items-center justify-content-center order-md-2 contenedor-form">
+                    <form class="formulario" action="./error404.html">
                         <div class="mb-3">
                           <label for="exampleInputEmail1" class="form-label">Email</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                           <div id="emailHelp" class="form-text">A este correo será enviada la respuesta.</div>
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
                           </div>
                           <div class="form-check form-switch">
                             <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
@@ -51,12 +55,11 @@
     </main>
     <footer class="pie">
         <h2>Seguinos en nuestras redes</h2>
-        <i class="fab fa-instagram"></i>
-        <a href="https://www.instagram.com/electricabc/" target="_blank">Instagram</a>
-        <a href="#" target="_blank">Facebook</a>
+        <a class="hvr-underline-from-center" href="https://www.instagram.com/electricabc/" target="_blank">Instagram</a>
+        <a class="hvr-underline-from-center" href="https://www.facebook.com/abcelectrichat" target="_blank">Facebook</a>
         <p>Telefono: 355672419</p>
         <p>ventas@abcelectric.com.ar</p>
-        <a href="https://www.google.com/maps/place/ABC+Electric/@-31.4309993,-64.153921,17z/data=!3m1!4b1!4m5!3m4!1s0x9432a2cb9727fcc3:0x3fc6254d58cfb2c3!8m2!3d-31.4310076!4d-64.1516934" target="_blank">Sargento Cabral 1930</a>
+        <a href="https://www.google.com/maps/place/ABC+Electric/@-31.4309993,-64.153921,17z/data=!3m1!4b1!4m5!3m4!1s0x9432a2cb9727fcc3:0x3fc6254d58cfb2c3!8m2!3d-31.4310076!4d-64.1516934" target="_blank" class="hvr-underline-from-center" >Sargento Cabral 1930</a>
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>

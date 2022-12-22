@@ -281,8 +281,8 @@
   transition-property: transform;
 }
 .hvr-grow-rotate:hover, .hvr-grow-rotate:focus, .hvr-grow-rotate:active {
-  -webkit-transform: scale(1.1) rotate(4deg);
-  transform: scale(1.1) rotate(4deg);
+  -webkit-transform: scale(1.2) rotate(7deg);
+  transform: scale(1.2) rotate(7deg);
 }
 
 /* Float */
@@ -2187,7 +2187,7 @@
   left: 51%;
   right: 51%;
   bottom: 0;
-  background: #2098D1;
+  background: #ffffff;
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
