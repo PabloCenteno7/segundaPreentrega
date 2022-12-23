@@ -50,7 +50,7 @@ body{
 }
 
 .formulario{
-    width: 100%;
+    @include ancho;
 }
 
 .wsp__link{
@@ -122,8 +122,8 @@ body{
     }
 
     .img-sobrenosotros{
-        @include mixinWidht;
         overflow: hidden;
+        @include ancho;
     }
 
     .contacto{
@@ -136,7 +136,7 @@ body{
         display: flex;
         text-align:center;
         height: 100%;
-        @include mixinWidht;
+        @include ancho;
     }
     .row div{
         padding-bottom: 0.5rem;
@@ -152,7 +152,7 @@ body{
     }
 
     .inicio{
-        @include min-width;
+        @include ancho;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -160,11 +160,11 @@ body{
     }
 
     header{
-        @include min-width;
+        @include ancho;
     }
 
     .img-sobrenosotros{
-        @include min-width;
+        @include ancho;
     }
 
     .img-inicio{
@@ -173,14 +173,14 @@ body{
     }
 
     .contacto{
-        @include mixinHeight;
+        @include alto;
     }
 }
 @media screen and (min-width:993px){
     .contacto{
-        @include mixinHeight;
+        @include alto;
     }
     .row .ancho{
-        @include min-width;
+        @include ancho;
     }
 }

@@ -5,4 +5,12 @@ $colores-pagina:(
     body:#C5CAE9,
     blanco: rgb(255, 255, 255),
     rojo:red
-)
+);
+
+@mixin alto{
+    height: 100vh;
+}
+
+@mixin ancho{
+    width: 100%;
+}
