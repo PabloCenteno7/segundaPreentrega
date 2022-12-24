@@ -142,6 +142,16 @@ body{
     .img-catalogo{
         width: 100%;
     }
+
+    .contacto{
+        height: 100%;
+        width: 95%;
+    }
+
+    .boletin{
+        position: relative;
+        left: 10%;
+    }
 }
 
 @media screen and(min-width:460px) and (max-width:576px){
@@ -159,11 +169,17 @@ body{
     }
 
     .contacto{
-        height: 180vh;
+        height: 100%;
+        width: 95%;
     }
 
     .img-inicio{
         width: 100%;
+    }
+
+    .boletin{
+        position: relative;
+        left: 10%;
     }
 
     header ul{
@@ -173,6 +189,10 @@ body{
     }
 
     .img-catalogo{
+        width: 100%;
+    }
+
+    .formulario{
         width: 100%;
     }
 }
