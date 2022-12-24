@@ -112,7 +112,7 @@ body{
     object-fit: cover;
 }
 
-@media screen and(min-width:0px) and (max-width:576px){
+@media screen and(min-width:0px) and (max-width:459px){
     .inicio{
         display: flex;
         text-align:center
@@ -123,11 +123,57 @@ body{
 
     .img-sobrenosotros{
         overflow: hidden;
-        @include ancho;
+        width: 100%;
     }
 
     .contacto{
         height: 180vh;
+    }
+
+    .img-inicio{
+        width: 100%;
+    }
+
+    header ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-catalogo{
+        width: 100%;
+    }
+}
+
+@media screen and(min-width:460px) and (max-width:576px){
+    .inicio{
+        display: flex;
+        text-align:center
+    }
+    .row div{
+        padding: 0.5rem;
+    }
+
+    .img-sobrenosotros{
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .contacto{
+        height: 180vh;
+    }
+
+    .img-inicio{
+        width: 100%;
+    }
+
+    header ul{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .img-catalogo{
+        width: 100%;
     }
 }
 
